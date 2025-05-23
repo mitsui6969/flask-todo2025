@@ -24,11 +24,11 @@
                 <div class="check_task">
                     <input type="checkbox"/>
                     <div class="task_name">
-                        {{ task }}
+                        {{ task[1] }}
                     </div>
                 </div>
 
-                <a href="/delete/{{ loop.index0 }}">delete</a>
+                <a href="/delete/{{ task[0] }}">delete</a>
             </li>
             {% endfor %}
         </ul>
