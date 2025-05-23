@@ -1,0 +1,92 @@
+html {
+    background-color: #D3E5E4;
+}
+
+body {
+    width: 500px;
+    margin: 0 auto;
+    margin-top: 30px;
+    text-align: center;
+    align-items: center;
+}
+
+h1 {
+    margin: 20px 0;
+    color: #695757;
+}
+
+input[type="text"] {
+    width: 75%;
+    padding: 5px 20px;
+    margin-bottom: 20px;
+    font-size: larger;
+    border: none;
+    outline: none;
+    border-bottom: 3px solid #AAAAAA;
+    background-color: rgba(0, 0, 0, 0);
+    transition: border-bottom .3s;
+}
+
+input[type="text"]:focus {
+    border-bottom: 3px solid #917F7F;
+}
+
+button {
+    width: 15%;
+    padding: 10px 0;
+    background-color: #695757;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-size: large;
+}
+
+
+li {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    height: 60px;
+    padding: 0 20px;
+    margin: 10px 0;
+    font-size: larger;
+    border-radius: 10px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, .2);
+}
+
+ul {
+    padding-left: 0;
+}
+
+.check_task {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+input[type="checkbox"] {
+    height: 30px;
+    width: 30px;
+    margin: 0;
+    margin-right: 15px;
+    accent-color: #917F7F;
+    cursor: pointer;
+}
+
+input[type="checkbox"]:checked ~ .task_name {
+    text-decoration: line-through;
+    color: #817d7d;
+}
+
+a {
+    display: flexbox;
+    padding: 5px 10px;
+    font-size: medium;
+    color: #917F7F;
+    text-align: center;
+    text-decoration: none;
+    border: solid 1px #917F7F;
+    border-radius: 5px;
+}
